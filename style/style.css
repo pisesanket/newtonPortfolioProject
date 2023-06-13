@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+}
+
+#hero{
+    padding-top: 50px;
+    background-image:url(../images/mainBack2.jpg);
+    background-size: cover;
+
+    max-width:100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.2vw;
+    height: 600px;
+    background-position:center;
+}
+#hero div{
+    padding-left: 30%;
+    padding-right: 30%;
+    color:bisque;
+}
+#hero div h2,#hero div h1{
+    font-weight: 400;
+}
+#hi_text{
+    display: inline;
+    font-size: 1vw;
+}
+#black-box{
+    background-color: #000;
+    font-size: 80px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+#you{
+    font-size: 96px;
+}
+#card-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.card{
+    max-width: 340px;
+    height: 400px;
+    /* min-width: 225px; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    border-radius: 10px;
+    box-shadow:2px 4px 5px grey;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card img{
+    width: 100%;
+}
+.card div{
+    grid-template-columns: minmax(340px,1fr);
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.card div p{
+    padding-top: 10px;
+}
+
+.grid-item{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+
+}
+#bottom{
+    display: flex;
+    justify-content: space-around;
+}
+#bottom p{
+    padding-top: 10px;
+}
+#contact{
+    background-color:#4F4557;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+    height: 150px;
+}
+#about{
+    background-color:#F4EEE0;
+    color: #393646;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    height: 150px;
+}
+@media (width<=786px) {
+    .grid-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact{
+        margin: 0;
+        width: auto;
+        
+    }
+    #about{
+        width: auto;
+        margin: 0;
+        
+    }
+    #hero{
+
+        min-height: 50vh;
+        font-size: 3.5vw;
+    }
+    #hero div{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    #hi_text{
+        font-size: 2vw;
+    }
+    #black-box{
+        font-size: 24px;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+}
